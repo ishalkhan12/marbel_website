@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- FontAwesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Products - Popular Marble</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <div class="logo">PM</div>
+    <div>
+      <div style="font-weight:800">Popular Marble</div>
+      <div style="font-size:12px; opacity:.9">Premium Natural Stones</div>
+    </div>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- User Icon -->
+    <a href="#" class="icon-link" id="user-btn">
+      <i class="fas fa-user"></i>
+    </a>
+  </nav>
+
+  <!-- cart Icon -->
+  <div id="cart-btn">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+  <!-- Toggle Button (mobile) -->
+  <button id="nav-toggle">☰</button>
+</header>
+
+<!-- ===== Login/Register Modal ===== -->
+<div id="user-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <div class="form-container">
+      <!-- Login Form -->
+      <form id="login-form" class="active">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+        <p>Don’t have an account? <a href="#" id="show-register">Register</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form">
+        <h2>Register</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Hero -->
+  <section class="hero-product">
+    <div class="overlay"></div>
+    <div class="hero-text">
+     <h1>Our Products</h1>
+       <p>Browse our selection of marble, onyx and granite.</p>
+    </div>
+  </section>
+
+<main class="container">
+
+  <div class="products-grid" style="margin-top:12px">
+    <!-- 30 Product Cards -->
+    <!-- Repeat pattern -->
+    <!-- Product 1 to 30 -->
+    <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9oC8vHx-1O7aAYnHh-jYQVWNpo_OONu83w&s" alt="Product 1">
+      <div class="info">
+        <h3>Beige Travertine Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+        <a href="#" class="btn add-to-cart" data-price="8000">Add to cart</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/4/HI/UI/VS/8305510/crystal-yellow-500x500.jpg" alt="Product 2">
+      <div class="info">
+        <h3>Crystal Yellow Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="17500">Add to cart</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://mawrbled.com/cdn/shop/files/AbsoluteBlackGranite.jpg?v=1699258078&width=2048" alt="Product 3">
+      <div class="info">
+        <h3>Absolute Black Granite</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="8700">Add to cart</a>
+      </div>
+    </article>
+    <!-- continue same style till 30 -->
+    <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTke5h6xIGzlJN4zOf93hNCrV08e23EIjKX1w&s" alt="Product 30">
+      <div class="info">
+        <h3>Tan Brown Granite</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="9200">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://www.faisalgranites.com/wp-content/uploads/2023/02/kashmir-white-e1675351922782.jpg" alt="Product 30">
+      <div class="info">
+        <h3>Kashmir White Granite</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="5500">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://5.imimg.com/data5/OQ/PI/MD/SELLER-24573421/blue-pearl-granite-500x500.jpg" alt="Product 30">
+      <div class="info">
+        <h3>Blue Pearl Granite</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="7800">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEVJvFGOXZPPi4CXo9uZo2oPM6AulPe-IwLA&s" alt="Product 30">
+      <div class="info">
+        <h3>Baltic Brown Granite</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="16000">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8WTXTJKtwsIXd7wa5RRrOouupBM1lNe-1dA&s" alt="Product 30">
+      <div class="info">
+        <h3>Black Galaxy Granite (stone variant)</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="6800">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://www.faisalgranites.com/wp-content/uploads/2023/02/onyx-light-green2-e1675350553929.jpg" alt="Product 30">
+      <div class="info">
+        <h3>Green Onyx Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+        <a href="#" class="btn add-to-cart" data-price="15000">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5gyuN7q1HQMBuyXHU9-3bHOhXup5CcAhZ8Q&s" alt="Product 30">
+      <div class="info">
+        <h3>Fantasy Brown Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="5000">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPC0QhoHWOnYI1D3_s303PJXD1nbysWChaew&s" alt="Product 30">
+      <div class="info">
+        <h3>Pink Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="6700">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/FM/WS/IM/10979085/makrana-white-marble-500x500.jpg" alt="Product 30">
+      <div class="info">
+        <h3>Makrana White Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+        <a href="#" class="btn add-to-cart" data-price="9000">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://pic.stonecontact.com/picture/natural-stone/grey-william-marble-tile-15760-1B.JPG" alt="Product 30">
+      <div class="info">
+        <h3>Grey William Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="22,000">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://euromarble.com.au/wp-content/uploads/2018/06/nuova-portoro-marble-768x768-1.jpg" alt="Product 30">
+      <div class="info">
+        <h3>Portoro Gold Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="13000">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://krishnamarblegroup.com/wp-content/uploads/2020/03/Breccia-Aurora-Marble.jpg" alt="Product 30">
+      <div class="info">
+        <h3>Breccia Aurora Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="11,500">Add to cart</a>
+      </div>
+    </article>
+     <article class="card">
+      <img src="https://www.intmarble.com/cdn/shop/products/29108779712575.png?v=1706129619" alt="Product 30">
+      <div class="info">
+        <h3>Rosso Levanto Marble</h3>
+        <p>Size: standard slab — Finish: polished</p>
+         <a href="#" class="btn add-to-cart" data-price="14000">Add to cart</a>
+      </div>
+    </article>
+  </div>
+
+</main>
+<!-- Cart Sidebar -->
+  <div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p id="cart-total">Total: Rs. 0</p>
+      <button class="close-cart">Close</button>
+    </div>
+  </div>
+
+
+  <!-- Add this before closing </main> in products.html -->
+<div id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <div class="cart-footer">
+    <p id="cart-total">Total: Rs. 0</p>
+    <button id="checkout-btn" class="btn">Checkout</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container" style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; justify-content:space-between">
+    <div style="max-width:360px">
+      <h3 style="color:white; margin-top:0">Popular Marble</h3>
+      <p>High-quality marble and natural stones for residential and commercial projects.</p>
+    </div>
+    <div>
+      <h4 style="color:white; margin:0 0 8px">Contact</h4>
+      <div>Phone: +92 300 0000000</div>
+      <div>Email: info@popularmarble.example</div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

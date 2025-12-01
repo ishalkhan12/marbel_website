@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- FontAwesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Contact - Popular Marble</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <div class="logo">PM</div>
+    <div>
+      <div style="font-weight:800">Popular Marble</div>
+      <div style="font-size:12px; opacity:.9">Premium Natural Stones</div>
+    </div>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- User Icon -->
+    <a href="#" class="icon-link" id="user-btn">
+      <i class="fas fa-user"></i>
+    </a>
+  </nav>
+  <!-- cart Icon -->
+  <div id="cart-btn">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+
+  <!-- Toggle Button (mobile) -->
+  <button id="nav-toggle">☰</button>
+</header>
+
+<!-- ===== Login/Register Modal ===== -->
+<div id="user-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <div class="form-container">
+      <!-- Login Form -->
+      <form id="login-form" class="active">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+        <p>Don’t have an account? <a href="#" id="show-register">Register</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form">
+        <h2>Register</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+  <!-- Hero Section -->
+  <section class="hero-contact">
+    <div class="overlay"></div>
+    <div class="hero-text">
+     <h1>Contact Us</h1>
+     <p>If you have any questions, feel free to reach out to us.</p>
+    </div>
+  </section>
+
+<main class="container">
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:24px; margin-top:20px">
+    <div>
+      <h2>Get in Touch</h2>
+      <form class="card" style="padding:16px">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Our Office</h2>
+      <p><strong>Popular Marble</strong><br>
+         123 Main Street, Karachi, Pakistan</p>
+      <p><strong>Phone:</strong> +92 300 0000000</p>
+      <p><strong>Email:</strong> info@popularmarble.example</p>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.569972675284!2d67.0011!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f97b5c71e67%3A0xd89b9f8db7!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v0000000000" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy"></iframe>
+    </div>
+  </div>
+</main>
+
+<!-- Cart Sidebar -->
+  <div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p id="cart-total">Total: Rs. 0</p>
+      <button class="close-cart">Close</button>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="container" style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; justify-content:space-between">
+    <div style="max-width:360px">
+      <h3 style="color:white; margin-top:0">Popular Marble</h3>
+      <p>High-quality marble and natural stones for residential and commercial projects.</p>
+    </div>
+    <div>
+      <h4 style="color:white; margin:0 0 8px">Contact</h4>
+      <div>Phone: +92 300 0000000</div>
+      <div>Email: info@popularmarble.example</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

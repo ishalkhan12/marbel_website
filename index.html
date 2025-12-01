@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- FontAwesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Popular Marble - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <div class="logo">PM</div>
+    <div>
+      <div style="font-weight:800">Popular Marble</div>
+      <div style="font-size:12px; opacity:.9">Premium Natural Stones</div>
+    </div>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- Search Bar -->
+   <div class="search-box">
+  <input type="text" id="search-input" placeholder="Search products...">
+  <button id="search-btn"><i class="fas fa-search"></i></button>
+</div>
+
+
+    <!-- User Icon -->
+    <a href="#" class="icon-link" id="user-btn">
+      <i class="fas fa-user"></i>
+    </a>
+  </nav>
+
+  <!-- cart Icon -->
+  <div id="cart-btn">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+  <!-- Toggle Button (mobile) -->
+  <button id="nav-toggle">☰</button>
+</header>
+
+<!-- ===== Login/Register Modal ===== -->
+<div id="user-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <div class="form-container">
+      <!-- Login Form -->
+      <form id="login-form" class="active">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+        <p>Don’t have an account? <a href="#" id="show-register">Register</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form">
+        <h2>Register</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<main class="container">
+ <!-- ===== Hero Slider Start ===== -->
+<section class="hero-slider">
+  <div class="slides">
+    <div class="slide active" style="background-image:url('https://img.freepik.com/premium-photo/white-marble-with-gold-grey-veins-abstract-background_107173-27386.jpg');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Premium Marble Collection</h2>
+        <p>Luxury stones for modern interiors</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://plus.unsplash.com/premium_photo-1708092677389-883d2479b44d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFyYmxlJTIwdGV4dHVyZXxlbnwwfHwwfHx8MA%3D%3D');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Elegant Granite Designs</h2>
+        <p>Durable and stylish stone surfaces</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image:url('https://t4.ftcdn.net/jpg/05/75/71/17/360_F_575711794_3xLTBq8CFCkzqGUzzO3GacvIug2fCNZe.jpg');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>Onyx Marble Beauty</h2>
+        <p>Add a touch of class to your space</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots"></div>
+</section>
+<!-- ===== Hero Slider End ===== -->
+
+
+  <section style="margin-top:28px">
+    <h2>Featured Products</h2>
+    <div class="products-grid">
+      <!-- 6 featured product cards -->
+      <article class="card">
+        <img src="https://m.media-amazon.com/images/I/51no7a5xMVL._AC_SL1028_.jpg" alt="Product 1">
+        <div class="info">
+          <h3>Carrara White Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+          <a href="#" class="btn add-to-cart" data-price="8500">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://tinostone.com/wp-content/uploads/2017/06/calacatta-1-min.jpg" alt="Product 2">
+        <div class="info">
+          <h3>Calacatta White Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+          <a href="#" class="btn add-to-cart" data-price="9000">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://rmsstonex.in/wp-content/uploads/2024/08/statuario-marble-1-1920x1920.png" alt="Product 3">
+        <div class="info">
+          <h3>Statuario Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+          <a href="#" class="btn add-to-cart" data-price="5000">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://crofthouse.com/cdn/shop/products/Nero.jpg?v=1671213938" alt="Product 4">
+        <div class="info">
+          <h3>Nero Marquina Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+          <a href="#" class="btn add-to-cart" data-price="10000">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://www.pulycort.com/wp-content/uploads/2018/06/crema-marfil-coto-marble.jpg" alt="Product 5">
+        <div class="info">
+          <h3>Crema Marfil Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+          <a href="#" class="btn add-to-cart" data-price="8800">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRySxcho7DNEK6gIpKo5OjnEgbwh26XHVixqw&s" alt="Product 6">
+        <div class="info">
+          <h3>Emperador Dark Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+         <a href="#" class="btn add-to-cart" data-price="6700">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://www.tilehouz.com/cdn/shop/collections/image_b7de1d2a-aab1-45f1-a027-69770448a23e.jpg?v=1707548678" alt="Product 6">
+        <div class="info">
+          <h3>Arabescato Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+          <a href="#" class="btn add-to-cart" data-price="8500">Add to cart</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://smbmarble.com/wp-content/uploads/2023/03/Panda-white-marble.jpg" alt="Product 6">
+        <div class="info">
+          <h3>Panda White Marble</h3>
+          <p>High quality natural marble - suitable for floors and countertops.</p>
+         <a href="#" class="btn add-to-cart" data-price="5500">Add to cart</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- CART SIDEBAR -->
+<div id="cart" class="cart">
+  <button id="close-cart" class="close-btn">&times;</button>
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <div class="cart-footer">
+    <p id="cart-total">Total: Rs. 0</p>
+    <button id="checkout-btn" class="btn">Checkout</button>
+  </div>
+</div>
+
+
+  <section style="margin-top:32px">
+    <h2>Why Choose Us</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:12px">
+      <div class="card" style="padding:14px">
+        <h3>Quality</h3>
+        <p>Only premium, inspected slabs.</p>
+      </div>
+      <div class="card" style="padding:14px">
+        <h3>Installation</h3>
+        <p>Skilled teams for seamless fit and finish.</p>
+      </div>
+      <div class="card" style="padding:14px">
+        <h3>Custom Cuts</h3>
+        <p>Tailored sizes and edge finishes.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Cart Sidebar -->
+  <div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p id="cart-total">Total: Rs. 0</p>
+      <button class="close-cart">Close</button>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="container" style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; justify-content:space-between">
+    <div style="max-width:360px">
+      <h3 style="color:white; margin-top:0">Popular Marble</h3>
+      <p>High-quality marble and natural stones for residential and commercial projects.</p>
+    </div>
+    <div>
+      <h4 style="color:white; margin:0 0 8px">Contact</h4>
+      <div>Phone: +92 300 0000000</div>
+      <div>Email: info@popularmarble.example</div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

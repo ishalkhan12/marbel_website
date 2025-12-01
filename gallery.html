@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- FontAwesome Icons CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Gallery - Popular Marble</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <div class="logo">PM</div>
+    <div>
+      <div style="font-weight:800">Popular Marble</div>
+      <div style="font-size:12px; opacity:.9">Premium Natural Stones</div>
+    </div>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- User Icon -->
+    <a href="#" class="icon-link" id="user-btn">
+      <i class="fas fa-user"></i>
+    </a>
+  </nav>
+  
+  <!-- cart Icon -->
+  <div id="cart-btn">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+
+  <!-- Toggle Button (mobile) -->
+  <button id="nav-toggle">☰</button>
+</header>
+
+<!-- ===== Login/Register Modal ===== -->
+<div id="user-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <div class="form-container">
+      <!-- Login Form -->
+      <form id="login-form" class="active">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+        <p>Don’t have an account? <a href="#" id="show-register">Register</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form">
+        <h2>Register</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+ <section class="hero-gallery">
+    <div class="overlay"></div>
+    <div class="hero-text">
+     <h1>Our Gallery</h1>
+       <p>Explore our collection of marble projects and stone finishes.</p>
+    </div>
+  </section>
+
+<main class="container">
+  <div class="gallery-grid" style="margin-top:16px; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px">
+    <!-- Gallery Images -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu-sQKSq0a0EPu5y59OwcEtznJLKrUssnxbLeRmcm-EiSHQ6f7couhaAKk5A_zgR36hv0&usqp=CAU" alt="Gallery 1">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/SN00253-400x400.jpg" alt="Gallery 2">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/WMC10013-2-400x400.jpg" alt="Gallery 3">
+    </div>
+    <div class="card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2025/4/503636659/ZP/SZ/YO/135892505/marble-flooring-design.jpg" alt="Gallery 4">
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-w50O15Y4aLIoGESiVnw-zaML6iajryU2Q&s" alt="Gallery 5">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/MS02321-400x400.jpg" alt="Gallery 6">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/WST43279-400x400.jpg" alt="Gallery 7">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/TL80653-400x400.jpg" alt="Gallery 8">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/DC00275-400x400.jpg" alt="Gallery 9">
+    </div>
+    <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/TL80739-2-400x400.jpg" alt="Gallery 10">
+    </div>
+     <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/SN00273-400x400.jpg" alt="Gallery 11">
+    </div>
+     <div class="card">
+      <img src="https://www.marblesystems.com/wp-content/uploads/2012/roomscenes/WST43279-400x400.jpg" alt="Gallery 12">
+    </div>
+  </div>
+</main>
+
+<!-- Cart Sidebar -->
+  <div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p id="cart-total">Total: Rs. 0</p>
+      <button class="close-cart">Close</button>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="container" style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; justify-content:space-between">
+    <div style="max-width:360px">
+      <h3 style="color:white; margin-top:0">Popular Marble</h3>
+      <p>High-quality marble and natural stones for residential and commercial projects.</p>
+    </div>
+    <div>
+      <h4 style="color:white; margin:0 0 8px">Contact</h4>
+      <div>Phone: +92 300 0000000</div>
+      <div>Email: info@popularmarble.example</div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
